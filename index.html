@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FexBlox | Account Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #5865F2; /* Discord Blurple */
+            --accent: #00f2ff;
+            --bg: #0b0e14;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        body { background-color: var(--bg); color: white; overflow-x: hidden; line-height: 1.6; }
+
+        /* Background Glows */
+        .glow {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(88,101,242,0.15) 0%, rgba(0,0,0,0) 70%);
+            z-index: -1;
+            top: -100px;
+            right: -100px;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+
+        /* Header */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 30px 0; }
+        .logo { font-weight: 800; font-size: 1.6rem; letter-spacing: -1px; color: white; display: flex; align-items: center; gap: 10px; }
+        .logo span { color: var(--primary); }
+
+        /* Main Glass Card */
+        .glass-panel {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 3.5rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1rem; letter-spacing: -1px; }
+        p.lead { color: #94a3b8; font-size: 1.1rem; max-width: 600px; margin: 0 auto 2.5rem; }
+
+        /* Status Box */
+        .status-box {
+            background: rgba(88, 101, 242, 0.1);
+            border: 1px dashed var(--primary);
+            padding: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        code { color: #fff; font-weight: 700; background: rgba(255,255,255,0.1); padding: 3px 8px; border-radius: 5px; }
+
+        /* Buttons */
+        .btn-group { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 16px 32px; border-radius: 14px; font-weight: 700; text-decoration: none; transition: 0.3s; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+        .btn-secondary { background: rgba(255,255,255,0.05); color: white; border: 1px solid var(--border); }
+        .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+        /* Mini Grid */
+        .mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: var(--glass); border: 1px solid var(--border); padding: 25px; border-radius: 20px; transition: 0.3s; }
+        .card:hover { border-color: var(--primary); }
+        .card i { color: var(--primary); font-size: 1.5rem; margin-bottom: 15px; display: block; }
+        .card h3 { margin-bottom: 8px; }
+        .card p { color: #64748b; font-size: 0.95rem; }
+
+        footer { text-align: center; padding: 4rem 0; color: #475569; font-size: 0.9rem; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glow"></div>
+
+    <div class="container">
+        <nav data-aos="fade-down">
+            <div class="logo">FEX<span>BLOX</span></div>
+            <a href="https://discord.gg/HykRJtQQb3" class="btn btn-secondary" style="padding: 10px 20px;">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+        </nav>
+
+        <section class="glass-panel" data-aos="zoom-in">
+            <h1>Premium Account Generation.</h1>
+            <p class="lead">The most reliable way to get accounts. Instant delivery via Discord DMs, supported by a 24/7 automated system.</p>
+            
+            <div class="status-box">
+                <p style="font-size: 0.9rem; color: #cbd5e1;">
+                    <i class="fa-solid fa-gift" style="color: var(--primary); margin-right: 5px;"></i> 
+                    Add <code>FexBlox .gg/HykRJtQQb3</code> to your status for Free Access
+                </p>
+            </div>
+
+            <div class="btn-group">
+                <a href="https://discord.gg/HykRJtQQb3" class="btn btn-primary">
+                    <i class="fa-solid fa-bolt"></i> Start Generating
+                </a>
+                <a href="#prem" class="btn btn-secondary">
+                    <i class="fa-solid fa-crown"></i> View Premium
+                </a>
+            </div>
+        </section>
+
+        <div class="mini-grid">
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h3>1.2s Cooldown</h3>
+                <p>Whitelisted users get near-instant generation with no wait times between accounts.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-robot"></i>
+                <h3>Auto-Whitelist</h3>
+                <p>Our bot tracks your status in real-time. Change your bio, get the role instantly.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-solid fa-database"></i>
+                <h3>Live Stock</h3>
+                <p>Daily restocks for Normal and Rare tiers. We ensure the database is always fresh.</p>
+            </div>
+        </div>
+
+        <section id="prem" style="margin-top: 5rem;" data-aos="fade-up">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Why go Premium?</h2>
+            <div class="card" style="background: linear-gradient(135deg, rgba(88, 101, 242, 0.05), transparent);">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-solid fa-check" style="margin:0; font-size: 1rem; color: #00ff9d;"></i>
+                        No status requirement - Keep your bio however you like.
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-solid fa-check" style="margin:0; font-size: 1rem; color: #00ff9d;"></i>
+                        Access to the Rare Account pool.
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 10px;">
+                        <i class="fa-solid fa-check" style="margin:0; font-size: 1rem; color: #00ff9d;"></i>
+                        Priority support and specialized roles.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 FexBlox Service. Not affiliated with Roblox Corp.
+        </footer>
+    </div>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
